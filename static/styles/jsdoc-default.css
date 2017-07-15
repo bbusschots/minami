@@ -277,11 +277,30 @@ nav li {
   color: #388E3C;
 }
 
+.type-jsdoc {
+  background: #f4f4f4;
+  color: #4D4E53;
+}
+
 .type-module {
   background: #E1BEE7;
   color: #7B1FA2;
 }
 
+/** Item Icons **/
+.icon {
+	display: inline-block;
+	vertical-align: baseline;
+	text-align: center;
+	border-radius: 0.2em;
+	font-weight: bold;
+	width: 2em;
+	line-height: 2em;
+	margin-right: 0.5em;
+}
+.icon small{
+	font-weight: normal;
+}
 
 /** Footer **/
 footer {
