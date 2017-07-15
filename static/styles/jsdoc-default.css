@@ -249,6 +249,10 @@ nav li {
   display: inline-block;
 }
 
+.nav-item {
+	margin-left: 1em;
+}
+
 .nav-item-type {
   /* margin-left: 5px; */
   width: 18px;
