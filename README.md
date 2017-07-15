@@ -5,6 +5,12 @@ for [JSDoc 3](http://usejsdoc.org) by
 [Nijiko Yonskai](https://github.com/nijikokun) for use in Bartificer Creations
 open source projects.
 
+## Installation
+
+```
+npm install --save-dev '@bbusschots/minami-bartificer'
+```
+
 ## License
 
 Licensed under the Apache2 license.
