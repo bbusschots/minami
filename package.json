@@ -1,5 +1,5 @@
 {
-  "name": "minami-bartificer",
+  "name": "@bbusschots/minami-bartificer",
   "version": "1.2.3",
   "description": "A tweaked version of the Minami theme by Nijiko Yonskai for use on Bartificer Creations open source projects",
   "main": "publish.js",
