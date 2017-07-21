@@ -11,6 +11,20 @@ open source projects.
 npm install --save-dev '@bbusschots/minami-bartificer'
 ```
 
+JSDoc config file snippet:
+
+```
+{
+	...
+	"opts" : {
+		...
+		"template": "./node_modules/@bbusschots/minami-bartificer",
+		...
+	},
+  ...
+}
+```
+
 ## License
 
 Licensed under the Apache2 license.
