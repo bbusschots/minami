@@ -292,7 +292,7 @@ nav li {
 }
 
 /** Item Icons **/
-.icon {
+.type-icon {
 	display: inline-block;
 	vertical-align: baseline;
 	text-align: center;
@@ -302,7 +302,7 @@ nav li {
 	line-height: 2em;
 	margin-right: 0.5em;
 }
-.icon small{
+.type-icon small{
 	font-weight: normal;
 }
 
