@@ -407,7 +407,7 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
         displayName = displayName.replace(/^module:/g, "")
 
         if (itemHeading === 'Tutorials') {
-          nav.push(buildNavItem(linktoFn(item.longname, displayName)))
+          nav.push(buildNavItem(linktoFn(item.longname, displayName), 'type-tutorial'))
         } else {
           nav.push(buildNavHeading(buildNavType(item.kind, linktoFn(item.longname, displayName))))
         }
@@ -474,11 +474,12 @@ function buildNavHeading (content) {
  * methods, and types.
  * 
  * @param {String} itemContent navigation item content
+ * @param {String} cssClasses extra CSS classes
  * @return {String}
  */
-function buildNavItem (itemContent) {
+function buildNavItem (itemContent, cssClasses) {
   return [
-    '<li class="nav-item">',
+    '<li class="nav-item' + (cssClasses ? ' ' + cssClasses : '') + '">',
     itemContent,
     '</li>'
   ].join('')

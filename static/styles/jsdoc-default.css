@@ -253,6 +253,10 @@ nav li {
 	margin-left: 1em;
 }
 
+nav li.nav-item.type-tutorial {
+	list-style-type: initial;
+}
+
 .nav-item-type {
   /* margin-left: 5px; */
   width: 18px;
