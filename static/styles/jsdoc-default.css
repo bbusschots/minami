@@ -256,6 +256,14 @@ nav li {
 nav li.nav-item.type-tutorial {
 	list-style-type: initial;
 }
+nav li.nav-item.type-tutorial ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 1em;
+}
+nav li.nav-item.type-tutorial ul li {
+	list-style-type: square;
+}
 
 .nav-item-type {
   /* margin-left: 5px; */

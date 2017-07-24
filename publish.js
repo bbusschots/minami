@@ -407,7 +407,16 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
         displayName = displayName.replace(/^module:/g, "")
 
         if (itemHeading === 'Tutorials') {
-          nav.push(buildNavItem(linktoFn(item.longname, displayName), 'type-tutorial'))
+		  // TO DO - generate nested UL for child tutorials
+		  var tutorialItem = linktoFn(item.longname, displayName);
+		  if(item.children.length){
+			tutorialItem += '<ul>';
+			item.children.forEach(function(ctut){
+				tutorialItem += '<li class="nav-item type-tutorial">' + helper.toTutorial(ctut.name, ctut.title, {}) + '</li>';
+			});
+			tutorialItem += '</ul>';
+		  }
+          nav.push(buildNavItem(tutorialItem, 'type-tutorial'));
         } else {
           nav.push(buildNavHeading(buildNavType(item.kind, linktoFn(item.longname, displayName))))
         }

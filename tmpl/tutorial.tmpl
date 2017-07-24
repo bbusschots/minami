@@ -2,7 +2,8 @@
 
 <header>
     <?js if (children.length > 0) { ?>
-    <ul><?js
+    <h2>Sub-Tutorial<?js= children.length > 1 ? 's' : '' ?></h2>
+	<ul><?js
         var self = this;
         children.forEach(function(t) { ?>
         <li><?js= self.tutoriallink(t.name) ?></li>
