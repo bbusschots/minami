@@ -1,18 +1,18 @@
 <section>
 
-<header>
+<article>
+    <?js= content ?>
+</article>
+
+<article>
     <?js if (children.length > 0) { ?>
-    <h2>Sub-Tutorial<?js= children.length > 1 ? 's' : '' ?></h2>
+    <h2>Sub-Tutorials</h2>
 	<ul><?js
         var self = this;
         children.forEach(function(t) { ?>
         <li><?js= self.tutoriallink(t.name) ?></li>
     <?js }); ?></ul>
     <?js } ?>
-</header>
-
-<article>
-    <?js= content ?>
 </article>
 
 </section>
